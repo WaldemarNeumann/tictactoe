@@ -13,6 +13,28 @@
 </head>
 
 <body>
+    <img class="gameOver d-none" id="gameOver" src="img/game-over.png">
+    <button class="restart-btn d-none" id="restart" onclick="restart()">Restart</button>
+    <div class="players">
+        <div id="gamer-1" class="player inactive-player">
+            <img class="player-image" src="img/circle.png">
+            <h2>Player 1</h2>
+        </div>
+
+        <div id="gamer-2" class="player">
+            <img class="player-image" src="img/x.png">
+            <h2>Player 2</h2>
+        </div>
+    </div>
+
+    <div id="line-1" class="horizontal-line" style="top: 112px;"></div>
+    <div id="line-2" class="horizontal-line" style="top: 243px;"></div>
+    <div id="line-3" class="horizontal-line" style="top: 377px;"></div>
+    <div id="line-4" class="horizontal-line make-vertical" style="top: 230px; right: 165px;"></div>
+    <div id="line-5" class="horizontal-line make-vertical" style="top: 230px; right: 8px;"></div>
+    <div id="line-6" class="horizontal-line make-vertical" style="top: 230px; left: 152px;"></div>
+    <div id="line-7" class="horizontal-line" style="transform: rotate(40deg) scaleX(0.0); top: 220px;"></div>
+    <div id="line-8" class="horizontal-line" style="top: 217px; transform: rotate(-45deg) scaleX(0.0);"></div>
 
     <table>
         <tr>
