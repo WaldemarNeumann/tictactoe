@@ -28,7 +28,7 @@ function restart() {
     document.getElementById('gameOver').classList.add('d-none');
     document.getElementById('restart').classList.add('d-none');
 
-    for (let i = 1; i < 8; i++) {
+    for (let i = 1; i < 9; i++) {
         document.getElementById('line-' + i).classList.add('d-none');
     }
 
