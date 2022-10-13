@@ -30,13 +30,17 @@ function restart() {
 
     for (let i = 1; i < 9; i++) {
         document.getElementById('line-' + i).classList.add('d-none');
+
+        setTimeout(function() {
+            document.getElementById('line-' + i).classList.remove('d-none');
+            document.getElementById('line-' + i).style.transform = 'scaleX(0)';
+        }, 1)
     }
 
     for (let i = 0; i < 9; i++) {
         document.getElementById('circel-' + i).classList.add('d-none');
         document.getElementById('cross-' + i).classList.add('d-none');
     }
-
 
 }
 
